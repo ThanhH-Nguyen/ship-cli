@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'yarn --version' 
+                sh 'yarn global add bolt'
+                sh 'bolt install'
             }
         }
     }
